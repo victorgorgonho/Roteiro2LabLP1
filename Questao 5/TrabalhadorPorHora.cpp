@@ -5,10 +5,10 @@ TrabalhadorPorHora::TrabalhadorPorHora()
     nome = " ";
     salario = 0;
 }
-TrabalhadorPorHora::TrabalhadorPorHora(std::string nome, double valorDaHora, int horasSemanais){
+TrabalhadorPorHora::TrabalhadorPorHora(std::string nome, double valorDaHora){
     setNome(nome);
     setValorDaHora(valorDaHora);
-    setSalario(calcularPagamentoSemanal(horasSemanais));
+    setSalario(0);
 }
 
 double TrabalhadorPorHora::getValorDaHora(){
@@ -33,6 +33,8 @@ double TrabalhadorPorHora::calcularPagamentoSemanal(int horas){
     }else{
         pagSemanal += horas * valorDaHora;
     }
+
+    salario = pagSemanal * 4;
 
     return pagSemanal;
 }

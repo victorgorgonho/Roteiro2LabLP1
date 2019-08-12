@@ -7,7 +7,7 @@ class TrabalhadorPorHora : public Trabalhador
 {
     public:
         TrabalhadorPorHora();
-        TrabalhadorPorHora(std::string nome, double valorDaHora, int horasSemanais);
+        TrabalhadorPorHora(std::string nome, double valorDaHora);
 
         double getValorDaHora();
         void setValorDaHora(double valorDaHora);

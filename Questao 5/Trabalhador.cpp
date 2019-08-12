@@ -1,5 +1,7 @@
 #include "Trabalhador.h"
 
+#define ERROR -1
+
 Trabalhador::Trabalhador()
 {
     nome = " ";
@@ -25,11 +27,11 @@ void Trabalhador::setSalario(double salario){
 }
 
 double Trabalhador::calcularPagamentoSemanal(int horas){
-
+    return ERROR;
 }
 
 double Trabalhador::getValorDaHora(){
-
+    return ERROR;
 }
 
 void Trabalhador::setValorDaHora(double valorDaHora){
